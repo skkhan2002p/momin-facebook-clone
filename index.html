@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momin Hessen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <h1 class="logo">Momin Hessen</h1>
+        </div>
+        <div class="nav-center">
+            <button class="nav-icon active" title="Home">🏠</button>
+            <button class="nav-icon" title="Friends">👥</button>
+            <button class="nav-icon" title="Groups">💬</button>
+            <button class="nav-icon" title="Notifications">🔔</button>
+        </div>
+        <div class="nav-right">
+            <div class="profile-pic-sm">MH</div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar left-sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active"><span class="icon">🏠</span> Feed</a></li>
+                <li><a href="#"><span class="icon">👤</span> Momin Hessen</a></li>
+                <li><a href="#"><span class="icon">👥</span> Friends</a></li>
+                <li><a href="#"><span class="icon">💾</span> Saved</a></li>
+                <li><a href="#"><span class="icon">🕒</span> Memories</a></li>
+                <li><a href="#"><span class="icon">📊</span> Analytics</a></li>
+            </ul>
+        </aside>
+
+        <!-- Center Feed Area -->
+        <main class="feed-area">
+            <!-- Create Post Box -->
+            <div class="card create-post-card">
+                <div class="create-post-top">
+                    <div class="profile-pic-sm">MH</div>
+                    <input type="text" id="post-input" placeholder="What's on your mind, Momin?" autocomplete="off">
+                </div>
+                <div class="create-post-bottom">
+                    <button class="post-action-btn" id="submit-post">📝 Post</button>
+                </div>
+            </div>
+
+            <!-- Posts Container -->
+            <div id="posts-container">
+                <!-- Posts will be loaded dynamically -->
+                <div class="card post-card">
+                    <div class="post-header">
+                        <div class="profile-pic-sm">MH</div>
+                        <div>
+                            <h4 class="post-author">Momin Hessen</h4>
+                            <span class="post-time">Just now</span>
+                        </div>
+                    </div>
+                    <div class="post-body">
+                        Welcome to my social space! Feel free to share your thoughts here. 🚀
+                    </div>
+                    <div class="post-footer">
+                        <button class="like-btn">👍 Like (1)</button>
+                        <button class="comment-btn">💬 Comment</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar right-sidebar">
+            <h3>Contacts</h3>
+            <ul class="contact-list">
+                <li><span class="status-dot"></span> Ali Khan</li>
+                <li><span class="status-dot"></span> Sara Ahmed</li>
+                <li><span class="status-dot"></span> Zoya Malik</li>
+                <li><span class="status-dot"></span> Rehan Sheikh</li>
+            </ul>
+        </aside>
+    </div>
+
+    <script src="https://getmaya.cloud/_maya/db.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
